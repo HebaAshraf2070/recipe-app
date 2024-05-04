@@ -1,0 +1,82 @@
+.auth {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../assets/images/da87cd52923ebecef90e1f43751cfebc.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .auth-card {
+        $text-main: #4AA35A;
+        $text-dark-gray: gray;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 1rem;
+
+        h1 {
+            color: (73, 73, 73, 0.6);
+
+        }
+
+        i {
+            color: #8b8287;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .text-dark-gray {
+            color: $text-dark-gray;
+        }
+
+        .text-main {
+            color: $text-main;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 0.5rem;
+    margin-top: 10px;
+
+    // this means in case of class of primary do what is inside it
+    &.primary {
+        background-color: #4AA35A;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &.dark {
+        background-color: #666e68;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &.dark-outline {
+        border: 1px solid #666e68;
+        color: #666e68;
+
+        &:hover {
+            opacity: 0.7;
+            background-color: #666e68;
+            color: #fff;
+        }
+    }
+}

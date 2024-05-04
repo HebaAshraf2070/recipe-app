@@ -1,0 +1,45 @@
+<section class="auth">
+    <div class="container">
+        <div class="row  vh-100 justify-content-center align-items-center ">
+            <div class="col-md-10  ">
+                <div class="auth-card">
+                    <div class="w-50 mx-auto text-center ">
+                        <img src="../../assets/images/4 4.png" alt="" class="w-75 ">
+                    </div>
+
+                    <h1 class="">Confirm Code</h1>
+                    <form [formGroup]="confirmGroup" (ngSubmit)="onConfirmCode(confirmGroup)">
+                        <div class="row">
+
+                            <div class="col-md-12">
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="email" type="text" class="form-control" placeholder="email">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="code" type="text" class="form-control" placeholder="code">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button type="submit" class="primary w-100">Confirm Code</button>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

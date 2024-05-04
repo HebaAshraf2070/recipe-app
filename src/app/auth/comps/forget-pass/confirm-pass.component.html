@@ -1,0 +1,26 @@
+<section class="auth">
+    <div class="container">
+        <div class="row  vh-100 justify-content-center align-items-center ">
+            <div class="col-md-8 ">
+                <div class="auth-card">
+                    <div class="w-50 mx-auto text-center ">
+                        <img src="../../assets/images/4 4.png" alt="" class="w-75 ">
+                    </div>
+
+                    <h1 class="">forget Password</h1>
+                    <p>No worries! Please enter your email and we will send a password reset link</p>
+                    <form [formGroup]="forgetPassform" (ngSubmit)="confirmPass(forgetPassform)">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fa-solid fa-mobile-screen"></i></span>
+                            <input formControlName="email" type="email" class="form-control"
+                                placeholder="enter your email">
+                        </div>
+
+                        <button type="submit" class="primary w-100">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

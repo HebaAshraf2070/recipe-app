@@ -1,0 +1,96 @@
+<section class="auth">
+    <div class="container">
+        <div class="row  vh-100 justify-content-center align-items-center ">
+            <div class="col-md-10  ">
+                <div class="auth-card">
+                    <div class="w-50 mx-auto text-center ">
+                        <img src="../../assets/images/4 4.png" alt="" class="w-75 ">
+                    </div>
+
+                    <h1 class="">Register</h1>
+                    <p>No worries! Please enter your email and we will send a password reset link</p>
+                    <form [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm)">
+                        <div class="row">
+                            <div class="col-md-12 my-3">
+                                <ngx-dropzone (change)="onSelect($event)" [multiple]="false">
+                                    <ngx-dropzone-label> <i class="fa-solid fa-upload text-main"></i>upload your
+                                        image
+                                        here!</ngx-dropzone-label>
+                                    <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview"
+                                        *ngFor="let f of files" [file]="f">
+                                    </ngx-dropzone-image-preview>
+                                </ngx-dropzone>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="userName" type="text" class="form-control"
+                                        placeholder="UserName">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="email" type="text" class="form-control" placeholder="email">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="country" type="text" class="form-control"
+                                        placeholder="country">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="phoneNumber" type="text" class="form-control"
+                                        placeholder="phoneNumber">
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input class="position-relative " formControlName="password"
+                                        [type]="hide? 'password':'text'" class="form-control" placeholder="password">
+                                    <span (click)="hide=!hide" class="position-absolute d-flex flex-row icoPosition">
+                                        <i [class]="hide? 'fa-eye-slash':'fa-eye'" Class="fa-solid"></i>
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-mobile-screen"></i></span>
+                                    <input formControlName="confirmPassword" type="text" class="form-control"
+                                        placeholder="confirm Pasword">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="links">
+                            <a class="ms-auto " [routerLink]='["../code"]'>Get Code</a>
+                        </div>
+                        <button type="submit" class="primary w-100">Register</button>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
