@@ -49,7 +49,7 @@ export class SideBarComponent {
     {
       text: 'Categories',
       icon: 'fa-solid fa-home',
-      link: '/dashboard/dashboard/admin/categories',
+      link: '/dashboard/admin/categories',
       isActive: this.isAdmin(),
     },
     {

@@ -6,9 +6,9 @@ import { adminGuard } from '../core/guardes/admin.guard';
 import { authGuard } from '../core/guardes/auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
-    path: "dashboard", canActivate: [authGuard], component: DashBoardComponent, children: [
+    path: "", canActivate: [authGuard], component: DashBoardComponent, children: [
       // { path: '', redirectTo: 'home', pathMatch: 'full' },
       // { path: 'home', component: HomeComponent },
       {

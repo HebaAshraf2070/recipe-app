@@ -31,9 +31,9 @@ $app-theme: mat.define-light-theme((color: (primary: $app-primary,
 
 /* You can add global styles to this file, and also import other style files */
 .auth {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../../app/src/assets/images/da87cd52923ebecef90e1f43751cfebc.jpg);
+    // background-image:
+    //     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    //     url(../../app/src/assets/images/da87cd52923ebecef90e1f43751cfebc.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

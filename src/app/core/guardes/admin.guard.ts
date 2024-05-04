@@ -13,7 +13,7 @@ export const adminGuard: CanActivateFn = (route, state) => {
 
 
 
-  if (localStorage.getItem('userToken') !== null && _AuthService.role == "superAdmin") {
+  if (localStorage.getItem('userToken') !== null && _AuthService.role == "SuperAdmin") {
     return true;
   } else {
     _Router.navigate(['/auth'])
